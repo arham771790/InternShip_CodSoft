@@ -1,0 +1,83 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  /* Set background image */
+  background-image: url("pic1.jpg");
+  background-position: center;
+  background-size: cover; 
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Use a fallback background color */
+  background-color: #3854a2; /* Fallback */
+}
+.container {
+  position: relative;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 12px;
+  padding: 10px 20px 20px;
+  background: linear-gradient(to right, rgb(70, 128, 222), rgb(33, 206, 153));
+  /* Gradient from left (rgb(70, 128, 222)) to right (rgb(33, 206, 153)) */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.display {
+  height: 80px;
+  width: 100%;
+  outline: none;
+  border: none;
+  text-align: right;
+  margin-bottom: 10px;
+  font-size: 25px;
+  color: #000e1a;
+  pointer-events: none; /* Prevents clicking on the display */
+}
+
+.buttons {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.buttons button {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #eee;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.buttons button:hover {
+  background-color: rgb(247, 239, 26); /* Hover background color */
+}
+
+.buttons button:active {
+  transform: scale(0.99); /* Scale down slightly on click */
+}
+
+.operator {
+  color: #2f9fff; /* Operator buttons color */
+}
+
+
+.button {
+    background-color: #eee;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: rgb(247, 239, 26);
+  }
+  

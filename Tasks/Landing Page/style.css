@@ -1,0 +1,510 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html,body
+{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(2, 2, 2);
+}
+.main
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+hr {
+    height: 1.2px;
+    margin: 40px 84px;
+    color: #0a0a0b;
+  }
+
+.left
+{
+    position: relative;
+    width: 40%; 
+    height: 100%;
+    background-color: rgb(139, 121, 121);
+}
+.right
+{
+    width: 60%;
+    height: 100%;
+    background-color:cornflowerblue;
+}
+.rtop
+{
+    display: flex;
+    height: 50%;
+    width: 100%;
+}
+
+.rtleft
+{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(0, 255, 85);
+    background-image: url(pic1.jpeg);
+    background-position: center;
+    background-size: cover;
+    transition:ease-in-out transform 1.01s;
+}
+.rtleft:hover
+{
+    transform: scaleY(1.02);
+    cursor: pointer;
+}
+.rtright
+{
+    width: 50%;
+    height: 100%;
+    background-color: blanchedalmond;
+    background-image: url(pic2.jpeg);
+    background-position: center;
+    background-size: cover;
+    transition:ease-in-out transform 1.01s;
+}
+.rtright:hover
+{
+    transform:scaleY(1.02);
+    cursor:pointer;
+}
+.rbottom
+{
+    width: 100%;
+    height: 50%;
+    background-image: url(pic3.webp);
+    background-position: center;
+    background-size: cover;
+    transition: ease-in-out transform 1.01s;
+    
+}
+
+.rbottom:hover
+{
+    transform:scaleY(1.02);
+    cursor:pointer;
+}
+nav
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.navl
+{
+    position: absolute;
+    top: 20px;
+    justify-content: center;
+    margin-left: 20px;
+    left: 30px;
+}
+.navl a
+{
+    text-decoration: none;
+    color: black;
+}
+.navl a i
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    font-weight: 600;
+    list-style: none;
+    margin: 20px 23px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: rgb(5, 4, 4);
+    position: relative;
+  }
+  nav ul li a.active-link::after {
+    width: 50%;
+  }
+  
+  nav ul li a::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+  }
+  
+  nav ul li a:hover::after {
+    color: rgb(0, 0, 0);
+    font-size: 1.02rem;
+    width: 100%;
+  }
+  
+    
+.textcenter
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.textcenter h1
+{
+    font-size: 120px;
+    font-weight: 500;
+}
+.textcenter p
+{
+    opacity: 0.6;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.textcenter a
+{
+    font-size: larger;
+    border-bottom: 1px solid black;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+}
+
+.second-section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.second-section h1
+{
+ margin-top: 15px;
+ font-weight: 300;
+ letter-spacing: 10px;
+ word-spacing: 15px;
+ font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  color: white;
+}
+.worklist {
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    margin-top: 50px;
+  }
+  .work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.1s;
+  }
+  .work img {
+    width: 100%;
+    display: block;
+    transition:ease-in-out transform 0.9s;
+  }
+  .work img:hover
+  {
+    transform: scale(1.02);
+    cursor: pointer;
+  }
+  .img-details
+  {
+    display: flex;
+    flex-direction: column;
+
+  }
+#abcd
+{
+       
+      font-family: "Playwrite ES Deco", cursive;
+      font-optical-sizing: auto;
+      font-weight: 100;
+      font-style: normal;
+    }
+.third-section
+{
+    margin: 0;
+    padding: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.men
+{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 90;
+    letter-spacing: 5px;
+}
+.slider
+{
+ width: 800px;
+ height: 500px; 
+ border-radius: 10px;
+ overflow: hidden;  
+} 
+.slides
+{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+.slides input
+{
+    display: none;
+}
+.slide
+{
+    width: 20%;
+    transition: 2s;
+}
+.slide img{
+    width: 800px;
+    height: 500px;
+}
+/*CSS for manual slide*/
+.navigation-manual
+{
+ position: absolute;
+ width: 800px;
+ margin-top:-40px;
+ display: flex;
+ 
+ justify-content: center;
+}
+.manual-btn
+{
+    border: 2px solid white;
+    padding:5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    
+}
+.manual-btn:not(:last-child)
+{
+    margin-right: 40px;
+}
+.manual-btn:hover
+{
+    background-color: white;
+}
+#radio1:checked~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked~ .first{
+    margin-left: -60%;
+}
+#radio5:checked~ .first{
+    margin-left: -80%;
+}
+#radio6:checked~ .first{
+    margin-left: -100%;
+}
+#radio7:checked~ .first{
+    margin-left: -120%;
+}
+/*CSS for manual animation ends*/
+/*CSS for automatic animation starts*/
+.navigation-auto
+{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: -40px;
+}
+.navigation-auto div
+{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+    
+}
+.navigation-auto div:not(:last-child)
+{
+    margin-right: 40px;
+}
+#radio1:checked~ .navigation-auto .auto-btn1
+{
+  background-color: white;
+}
+
+#radio2:checked~ .navigation-auto .auto-btn1
+{
+    background-color: white;
+}
+
+#radio3:checked~ .navigation-auto .auto-btn1
+{
+    background-color: white;
+}
+
+#radio4:checked~ .navigation-auto .auto-btn1
+{
+ background-color:white;
+}
+#radio5:checked~ .navigation-auto .auto-btn1
+{
+ background-color:white;
+}
+#radio6:checked~ .navigation-auto .auto-btn1
+{
+ background-color:white;
+}
+
+#radio7:checked~ .navigation-auto .auto-btn1
+{
+ background-color:white;
+}
+/*************Contact form*********/
+.contact
+{
+    color: white;
+}
+.contact-left {
+    flex-basis: 35%;
+  }
+  .contact-right {
+    flex-basis: 60%;
+  }
+  .contact .container .row {
+    padding: 60px;
+  }
+  .contact-left p {
+    margin-top: 30px;
+  }
+  .contact-left p i {
+    color:rgb(190, 133, 133);
+    margin-right: 15px;
+    font-size: 25px;
+  }
+  .social_media {
+    margin-top: 30px;
+  }
+  
+  .social_media a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ffffff;
+    display: inline-block;
+    transition: transform 0.2s;
+  }
+  .social_media a:hover {
+    color:rgb(188, 116, 116);
+    transform: translateY(-2px);
+  }
+  .btn.btn2 {
+    height: 25%px;
+    width: 50%px;
+    font-size: 30px;
+    display: inline-block;
+    background:rgb(235, 144, 144);
+  }
+  #btn2 {
+    padding: 14px 60px;
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  .contact-right form {
+    width: 100%;
+  }
+  form input,
+  form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: hsl(0, 100%, 99%);
+    padding: 15px;
+    margin: 15px 0px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+  }
+  form .btn2 {
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  .copyright {
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+    background: #d78888;
+    font-weight: 300;
+    margin-top: 20px;
+  }
+  nav .fas {
+    display: none;
+  }
+  
+/*CSS for automatic animation ends*/
+
+@media (max-width:769px)
+{
+    .main
+    {
+        flex-direction: column;
+    }
+    #centera
+    {
+      font-size: medium;
+    }
+    .navl
+    {
+        display: none;
+    }
+    .textcenter
+    {
+        position: relative;
+        top: 35%;
+        left: 50%;
+        font-size: 3rem;
+    }
+    .textcenter h1
+    {
+        margin-top: 25px;
+        font-size: 20px;
+    }
+    .main .left{
+        width: 100%;
+        
+    }
+    .main .right
+    {
+        width: 100%;
+    }
+}

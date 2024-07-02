@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="script.js">
+    <title>Arham's Portfolio Website</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left" style="font-size: 1.5rem;"><a href="/index.html" id="port">Arham's Portfolio</a></div>
+            <div class="right">
+                <ul class="abc">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fas fa-times"></i>
+                </ul>
+                <i class="fas fa-bars"></i>
+                
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">Hi, My name is <span class="purple">Arham</span><br>
+                <div>and I am a passionate <span id="element"></span></div>
+            </div>
+            <div class="rightSection"><img src="bg.png.png" alt="Developer Image"></div>
+        </section>
+        <hr>
+        <!----------------Second Section---------------->
+        <section class="secondSection" id="about">
+            <div class="container">
+                <div class="row">
+                    <!--About column one to store the image of myself-->
+                    <div class="about-col-1"><img src="img2.jpeg" alt=""></div>
+                    <!--About column two to store Information about me-->
+                    <div class="about-col-2">
+                        <h1 class="subtitle">About Me</h1>
+                        <p style="font-weight: 500;">
+                            Hello! I'm Arham, a passionate web developer and designer with a keen eye for detail and a
+                            love for creating intuitive and engaging digital experiences. With a strong foundation in
+                            UI/UX design and web development, I enjoy turning complex problems into simple, beautiful,
+                            and user-friendly designs. Currently, I'm pursuing my degree at Integral University, where
+                            I'm honing my skills in both front-end and back-end development. When I'm not coding, you
+                            can find me exploring new technologies, solving coding challenges, or working on personal
+                            projects to improve my skills. Let's connect and create something amazing together!
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links " onclick="opentab(event, 'skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                            <!-- <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p> -->
+
+                        </div>
+                        <div class="tab-contents " id="skills">
+                            <ul>
+                                <li><span>Data Structures & Algorithms</span><br>Good grip in Languages like C++,JAVA &
+                                    Python</li>
+                                <li><span>Web Development</span><br>Web App Development</li>
+                                <li><span>App Development</span><br>Building Android/IOS apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2008-2022</span><br><b>Intermediate:</b>Sheiling House School, Kanpur</li>
+                                <li><span>2022-2026</span><br><b>Graduation:</b>Integral University</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <!-- -------------Third Section------------- -->
+        <section class="thirdSection" id="services">
+            <div class="container">
+                <div class="sub-title">My Services</div>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>
+                            I am a dedicated professional specializing in web design. With a keen eye for detail, I
+                            create intuitive and engaging digital experiences. My ability to turn complex problems into
+                            elegant, user-friendly solutions sets me apart in the field.
+                        </p>
+
+                        <a href="/">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-css3"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>
+                            In UI/UX design, I excel at crafting user-friendly interfaces that enhance the user
+                            experience. My strong foundation in design principles and my passion for creating beautiful,
+                            functional designs make me a valuable asset in any project.
+                        </p>
+
+                        <a href="/">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>App Development</h2>
+                        <p>
+                            As an app developer, I bring ideas to life with robust Android and iOS applications. I enjoy
+                            tackling coding challenges and continuously improving my skills to build efficient and
+                            innovative apps that meet users' needs.
+                        </p>
+
+                        <a href="/">Learn more</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <hr>
+        <!-- ----------------Portfolio------------------ -->
+        <section class="portfolio" id="projects">
+            <div class="container">
+                <div class="sub-title" style="margin-left: 30px;">My Work</div>
+                <div class="worklist">
+                    <div class="work">
+                        <img src="Designer.png" alt="">
+                        <div class="layer">
+                            <h1>Amazon Clone</h1>
+                            <p>Clone of amazon having additional features</p>
+                            <a href="/"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="Designer2.png" alt="">
+                        <div class="layer">
+                            <h1>Portfolio Website</h1>
+                            <p>A unique platform that allows you to showcase your work and tell others about yourself.
+                                It’s like an online business card or CV that can help you find partnerships, show off
+                                your work, and even land your first job</p>
+                            <a href="/"><i class="fa-solid fa-link"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Designer4.png" alt="">
+                        <div class="layer">
+                            <h1>Vilify Clothing</h1>
+                            <p>A clothing website selling all category of wearables</p>
+                            <a href="/"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+
+        </section>
+        <hr>
+        <!-- --------------Contact Section--------------------- -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title1">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i>arhamsheikh6851@gmail.com</p>
+                        <p><i class="fa-regular fa-address-card"></i>+917309146851</p>
+                        <div class="social_media">
+                            <ul>
+                                <a href="https://www.linkedin.com/in/arham-sheikh-666bb3262/" target="_blank"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="https://github.com/arham771790" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="https://www.instagram.com/___arham_04/?hl=en" target="_blank"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                                <a href="https://x.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                            </ul>
+                            <a href="index.html" download class="btn btn2" id="btn2">Download Resume</a>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet"><input type="text" name="Name" placeholder="Your name" required>
+                            <input type="email" name="email" placeholder="Your email" required>
+                            <textarea name="message" row=6 placeholder=" Your message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <div class="copyright">Copyright &copy;arham-sheikh-666bb326212</div>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Coder', 'Web Designer', 'Problem Solver'],
+            typeSpeed: 150,
+            loop:true,
+        
+        });
+    </script>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(event, tabname) {
+            for (var tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (var tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxV2tq3nHZO0DQvWiOw6jQ-jrybHivQOlipmf4TQJbKxwlU-BVObE8qpD4rvkluZS0/exec'
+        const form = document.forms['submit-to-google-sheet']
+    
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                method: 'POST',
+                body: new FormData(form),
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                }
+            })
+                .then(response => response.json())
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    
+          
+</body>
+
+</html>
